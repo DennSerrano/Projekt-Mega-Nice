@@ -1,0 +1,346 @@
+/* =================
+General
+================= */
+
+@font-face {
+    font-family: graphikMedium;
+    src: url("../font/Graphik-Medium.ttf")
+}
+
+@font-face {
+    font-family: graphikRegular;
+    src: url("../font/Graphik-Regular.woff")
+}
+
+@font-face {
+    font-family: theinhardtLt;
+    src: url("../font/Theinhardt-Lt.woff")
+}
+
+@font-face {
+    font-family: tiemosHeadline;
+    src: url("../font/TiemposHeadline-Semibold.woff")
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: theinhardtLt;
+}
+
+/* =================
+Header
+================= */
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vh 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {}
+
+header ul li a {
+    font-family: graphikRegular;
+    text-decoration: none;
+    color: black;
+    padding: 0 2vw 0 0;
+}
+
+header h1 {
+    font-size: 30px;
+    font-family: tiemosHeadline;
+}
+
+header button {
+    font-family: graphikMedium;
+    padding: 1vh 5vw;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    ;
+}
+
+.hamburgerMenu {
+    display: none;
+    margin: 0 0 0 5vw;
+}
+
+.hamburgerMenu span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 5px 40px 5px 0;
+    background-color: black
+}
+
+.onclickMenu {
+    display: none;
+    background-color: #9FA2A7;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.onclickMenu ul {
+    display: block;
+}
+
+.onclickMenu ul li {
+    padding: 5px;
+}
+
+.onclickMenu ul li a {
+    font-family: tiemosHeadline;
+}
+
+.showMenu {
+    display: block;
+}
+
+/* =================
+Main
+================= */
+
+/* ========section 1============ */
+
+main section:nth-of-type(1) {}
+
+main section:nth-of-type(1) h2 {
+    text-align: center;
+    font-family: graphikRegular;
+    font-size: 35px;
+    padding: 10vh 0 0 0;
+}
+
+main section:nth-of-type(1) div img {
+    width: 100%;
+}
+
+main section:nth-of-type(1) article {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15vh 0;
+}
+
+main section:nth-of-type(1) article div:nth-of-type(1) {
+    width: 52vw;
+}
+
+main section:nth-of-type(1) article div:nth-of-type(2) {}
+
+main section:nth-of-type(1) article div p {
+    font-size: 20px;
+    line-height: 4vh;
+    font-family: graphikMedium;
+}
+
+main section:nth-of-type(1) article h4 {
+    font-size: 55px;
+    ;
+}
+
+main section:nth-of-type(1) article div:nth-of-type(2) p {
+    font-family: theinhardtLt;
+    color: #9FA2A7;
+}
+
+/* ========section 2============ */
+
+main section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10vw;
+}
+
+main section:nth-of-type(2) div img {
+    width: 100%;
+}
+
+main section:nth-of-type(2) article {
+    width: 85vw;
+    margin-left: 3vw;
+}
+
+main section:nth-of-type(2) article h2 {
+    font-family: tiemosHeadline;
+    font-size: 60px;
+    margin-bottom: 6vh;
+}
+
+main section:nth-of-type(2) article h3 {
+    font-family: graphikMedium;
+    font-size: 25px;
+    margin: 4vh 0;
+}
+
+main section:nth-of-type(2) article p {
+    font-size: 20px;
+    color: #8E9093;
+}
+
+/* ========section 3============ */
+
+main section:nth-of-type(3) {
+    background-color: #F1F1F4;
+    margin: 10vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+main section:nth-of-type(3) article {
+    padding: 10vh 0 0 5vw;
+    width: 75vw;
+}
+
+main section:nth-of-type(3) article h2 {
+    font-size: 8vh;
+    font-family: tiemosHeadline;
+    margin: 0 0 3vh 0;
+}
+
+main section:nth-of-type(3) article ol {
+    margin: 0 0 3vh 3vw;
+}
+
+main section:nth-of-type(3) article ol li {
+    color: #9FA2A7;
+    font-size: 20px;
+}
+
+main section:nth-of-type(3) article p {
+    color: #9FA2A7;
+    font-size: 20px;
+}
+
+main section:nth-of-type(3) div img {
+    width: 100%;
+}
+
+/* ========section 4============ */
+
+main section:nth-of-type(4) h2 {
+    text-align: center;
+    font-size: 7vh;
+    font-family: tiemosHeadline;
+    margin: 0 auto 5vh auto;
+}
+
+main section:nth-of-type(4) p {
+    text-align: center;
+    font-size: 20px;
+    color: #9FA2A7;
+    margin: 0 auto 0 auto;
+    line-height: 5vh;
+}
+
+main section:nth-of-type(4) article {
+    background: url(../img/28.png) center top/cover no-repeat;
+    display: flex;
+    background-size: 120%;
+    border-bottom: 2px solid #9FA2A7;
+    margin: 10vh 10vw;
+}
+
+main section:nth-of-type(4) article div:nth-of-type(1) {
+    padding: 24% 0 0 18%;
+}
+
+main section:nth-of-type(4) article div:nth-of-type(2) {
+    padding: 18% 0 10% 0;
+}
+
+main section:nth-of-type(4) article div:nth-of-type(1) p {
+    line-height: 6vh;
+    text-align: left;
+    font-size: 20px;
+    color: #9FA2A7;
+    font-family: tiemosHeadline;
+}
+
+main section:nth-of-type(4) article div:nth-of-type(2) img {
+    width: 100%;
+}
+
+/* =================
+Footer
+================= */
+
+footer {}
+
+footer h2 {
+    font-family: tiemosHeadline;
+    text-align: center;
+    font-size: 50px;
+}
+
+footer nav {
+    display: flex;
+    align-items: flex-end;
+    margin: 5vh 0 10vh 35vw;
+}
+
+footer nav img {
+    width: 6vw;
+}
+
+footer nav p {
+    font-family: graphikMedium;
+    color: #9FA2A7;
+}
+
+footer nav p a {
+    font-family: graphikMedium;
+    text-decoration: none;
+    color: black;
+}
+
+/* ========Media Queries====== */
+
+/* =====header nav========= */
+
+@media screen and (max-width: 600px) {
+    .hamburgerMenu {
+        display: block
+    }
+    header nav ul {
+        display: none;
+    }
+}
+
+/* =====main section1======= */
+
+@media only screen and (max-width: 600px) {
+    main section:nth-of-type(1) article {
+        display: block;
+        margin: 0 20vw;
+    }
+    main section:nth-of-type(1) article p {
+        margin: 0 0 5vh 0;
+    }
+}
+
+/* =====main section4======= */
+
+@media only screen and (max-width: 600px) {
+    main section:nth-of-type(4) article {
+        display: block;
+    }
+}
+
+/* ==========footer=========*/
+
+@media only screen and (max-width: 600px) {
+    footer nav {
+        margin: 5vh 10vw 10vh 15vw;
+    }
+}

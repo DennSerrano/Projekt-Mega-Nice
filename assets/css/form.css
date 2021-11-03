@@ -1,0 +1,211 @@
+/* =================
+General
+================= */
+
+@font-face {
+    font-family: graphikMedium;
+    src: url("../font/Graphik-Medium.ttf")
+}
+
+@font-face {
+    font-family: graphikRegular;
+    src: url("../font/Graphik-Regular.woff")
+}
+
+@font-face {
+    font-family: theinhardtLt;
+    src: url("../font/Theinhardt-Lt.woff")
+}
+
+@font-face {
+    font-family: tiemosHeadline;
+    src: url("../font/TiemposHeadline-Semibold.woff")
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: theinhardtLt;
+}
+
+/* =================
+Header
+================= */
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vh 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {}
+
+header ul li a {
+    font-family: graphikRegular;
+    text-decoration: none;
+    color: black;
+    padding: 0 2vw 0 0;
+}
+
+header h1 {
+    font-size: 30px;
+    font-family: tiemosHeadline;
+}
+
+header button {
+    font-family: graphikMedium;
+    padding: 1vh 5vw;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    ;
+}
+
+.hamburgerMenu {
+    display: none;
+    margin: 0 0 0 5vw;
+}
+
+.hamburgerMenu span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 5px 40px 5px 0;
+    background-color: black
+}
+
+.onclickMenu {
+    display: none;
+    background-color: #9FA2A7;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.onclickMenu ul {
+    display: block;
+}
+
+.onclickMenu ul li {
+    padding: 5px;
+}
+
+.onclickMenu ul li a {
+    font-family: tiemosHeadline;
+}
+
+.showMenu {
+    display: block;
+}
+
+/* =================
+Main
+================= */
+
+/* ========section 1============ */
+
+main section {
+    background: url(../img/home_hero.png) center/cover no-repeat;
+}
+
+main section h2 {
+    text-align: center;
+    font-family: graphikRegular;
+    font-size: 35px;
+    padding: 10vh 0 2vh 0;
+}
+
+main section form {
+    box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(236, 231, 230);
+    background: linear-gradient(133deg, rgba(236, 231, 230, 1) 33%, rgba(182, 182, 166, 1) 76%);
+    border-radius: 10px;
+    padding-top: 3vh;
+}
+
+main section form div {
+    margin: 0 0 3vh 0;
+}
+
+main section form label {
+    font-size: 20px;
+    font-family: tiemosHeadline;
+    color: black;
+}
+
+main section form div input {
+    padding: 1vh 6vw;
+}
+
+.submitButton {
+    background: rgb(236, 84, 64);
+    background: linear-gradient(346deg, rgba(236, 84, 64, 1) 33%, rgba(245, 246, 66, 1) 68%);
+    margin: 2vh 0 5vh 0;
+}
+
+.submitButton:hover {
+    background: rgb(236, 84, 64);
+    background: linear-gradient(166deg, rgba(236, 84, 64, 1) 33%, rgba(245, 246, 66, 1) 68%);
+}
+
+/* =================
+Footer
+================= */
+
+footer {}
+
+footer h2 {
+    font-family: tiemosHeadline;
+    text-align: center;
+    font-size: 50px;
+}
+
+footer nav {
+    display: flex;
+    align-items: flex-end;
+    margin: 5vh 0 10vh 35vw;
+}
+
+footer nav img {
+    width: 6vw;
+}
+
+footer nav p {
+    font-family: graphikMedium;
+    color: #9FA2A7;
+}
+
+footer nav p a {
+    font-family: graphikMedium;
+    text-decoration: none;
+    color: black;
+}
+
+/* =====header nav========= */
+
+@media screen and (max-width: 600px) {
+    .hamburgerMenu {
+        display: block
+    }
+    header nav ul {
+        display: none;
+    }
+}
+
+/* ==========footer=========*/
+
+@media only screen and (max-width: 600px) {
+    footer nav {
+        margin: 5vh 10vw 10vh 15vw;
+    }
+}

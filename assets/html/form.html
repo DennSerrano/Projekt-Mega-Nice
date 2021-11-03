@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Review</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section>
+                <div onclick="openMenu()" class="hamburgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="toggleMenu" class="onclickMenu">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">#Hacks</a></li>
+                    </ul>
+                </div>
+            </section>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">#Hacks</a></li>
+            </ul>
+            <h1>Design Critique</h1>
+            <button>Get started</button>
+        </nav>
+    </header>
+    <main>
+        <!--Section1-->
+        <section>
+            <h2>
+                Contact Us
+            </h2>
+            <form action="">
+                <label for="">First Name</label>
+                <div>
+
+                    <input type="text" name="" id="firstName">
+                </div>
+                <label for="">Surname</label>
+                <div>
+
+                    <input type="text" name="" id="surName">
+                </div>
+                <label for="">eMail</label>
+                <div>
+                    <input type="email" name="" id="eMail">
+                </div>
+                <label for="">Pohne-Number</label>
+                <div>
+
+                    <input type="number" name="" id="number">
+                </div>
+                <label for="">Message</label>
+                <div>
+                    <input type="text" name="" id="message">
+                </div>
+
+                <div>
+
+                    <input onclick="submitContact()" class="submitButton" type="button" value="Submit">
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h2>Have any questions?</h2>
+        <nav>
+            <img src="../img/costume_guy.png" alt="">
+            <p>
+                Get in touch with us via
+                <a href="#">super@super.de</a>
+            </p>
+        </nav>
+
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
